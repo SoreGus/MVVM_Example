@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class TeamsViewController: UIViewController {
     
@@ -47,6 +48,14 @@ class TeamsViewController: UIViewController {
         }
     }
     
+    fileprivate func teamAt(indexPath: IndexPath) -> Team? {
+        if viewModel.teams.value.count <= indexPath.row {
+            return nil
+        }
+        
+        return viewModel.teams.value[indexPath.row]
+    }
+    
 }
 
 extension TeamsViewController: UITableViewDataSource {
@@ -64,11 +73,9 @@ extension TeamsViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        if viewModel.teams.value.count <= indexPath.row {
+        guard let team: Team = teamAt(indexPath: indexPath) else {
             return UITableViewCell()
         }
-        
-        let team: Team = viewModel.teams.value[indexPath.row]
         
         cell.populate(team: team)
         
@@ -83,4 +90,26 @@ extension TeamsViewController: UITableViewDelegate {
         return 92
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard
+            let team: Team = teamAt(indexPath: indexPath),
+            let link: String = team.link,
+            let url: URL = URL.init(string: link) else {
+                
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            let safariViewController: SFSafariViewController = SFSafariViewController(url: url)
+            safariViewController.delegate = self
+            present(safariViewController, animated: true, completion: nil)
+        }
+    }
+    
+}
+
+extension TeamsViewController: SFSafariViewControllerDelegate {
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
 }

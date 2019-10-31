@@ -28,7 +28,7 @@ class  Team: Codable {
     
     var link: String? {
         if let strWebsite = strWebsite {
-            return strWebsite
+            return "http://\(strWebsite)"
         }
         return nil
     }
