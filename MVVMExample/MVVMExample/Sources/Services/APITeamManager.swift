@@ -1,5 +1,5 @@
 //
-//  TeamManager.swift
+//  APITeamManager.swift
 //  MVVMExample
 //
 //  Created by Gustavo Luís Soré on 29/10/19.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-typealias TeamManagerSearchCompletion = ([Team]?, TeamManagerError?) -> Void
-
-class TeamManager {
+class APITeamManager: TeamManager {
     
     // MARK: - Public Methods
     
@@ -31,9 +29,4 @@ class TeamManager {
         }
     }
     
-}
-
-enum TeamManagerError {
-    case parse
-    case api(APIError)
 }

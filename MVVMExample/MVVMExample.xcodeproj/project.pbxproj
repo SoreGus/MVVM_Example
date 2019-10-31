@@ -10,13 +10,16 @@
 		17DFD369A4D6086FF1AB0610 /* Pods_MVVMExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B041FBF464D34F3C1622A976 /* Pods_MVVMExample.framework */; };
 		406593782369231D00455A9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406593772369231D00455A9E /* Constants.swift */; };
 		4065937E2369239000455A9E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065937D2369239000455A9E /* Team.swift */; };
-		40659380236924CD00455A9E /* TeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065937F236924CD00455A9E /* TeamManager.swift */; };
+		40659380236924CD00455A9E /* APITeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065937F236924CD00455A9E /* APITeamManager.swift */; };
 		40B56546236919C100334520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B56545236919C100334520 /* AppDelegate.swift */; };
 		40B56548236919C100334520 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B56547236919C100334520 /* SceneDelegate.swift */; };
-		40B5654A236919C100334520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B56549236919C100334520 /* ViewController.swift */; };
 		40B5654D236919C100334520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B5654B236919C100334520 /* Main.storyboard */; };
 		40B5654F236919C500334520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B5654E236919C500334520 /* Assets.xcassets */; };
 		40B56552236919C500334520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B56550236919C500334520 /* LaunchScreen.storyboard */; };
+		40C6CD4A236A629900321D78 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6CD49236A629900321D78 /* TeamViewModel.swift */; };
+		40C6CD50236A63FE00321D78 /* TeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6CD4F236A63FE00321D78 /* TeamManager.swift */; };
+		40C6CD53236A65A500321D78 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6CD52236A65A500321D78 /* TeamsViewController.swift */; };
+		40C6CD5E236A672600321D78 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6CD5D236A672600321D78 /* TeamTableViewCell.swift */; };
 		40F4434123691EEF006F26F3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4434023691EEF006F26F3 /* API.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,15 +27,18 @@
 		23D76AC5CD5741322331BC0C /* Pods-MVVMExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMExample.release.xcconfig"; path = "Target Support Files/Pods-MVVMExample/Pods-MVVMExample.release.xcconfig"; sourceTree = "<group>"; };
 		406593772369231D00455A9E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4065937D2369239000455A9E /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		4065937F236924CD00455A9E /* TeamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManager.swift; sourceTree = "<group>"; };
+		4065937F236924CD00455A9E /* APITeamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITeamManager.swift; sourceTree = "<group>"; };
 		40B56542236919C100334520 /* MVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B56545236919C100334520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B56547236919C100334520 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40B56549236919C100334520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40B5654C236919C100334520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40B5654E236919C500334520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40B56551236919C500334520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40B56553236919C500334520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C6CD49236A629900321D78 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
+		40C6CD4F236A63FE00321D78 /* TeamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManager.swift; sourceTree = "<group>"; };
+		40C6CD52236A65A500321D78 /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		40C6CD5D236A672600321D78 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		40F4434023691EEF006F26F3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		51C2C773880DEB16174976B0 /* Pods-MVVMExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMExample.debug.xcconfig"; path = "Target Support Files/Pods-MVVMExample/Pods-MVVMExample.debug.xcconfig"; sourceTree = "<group>"; };
 		B041FBF464D34F3C1622A976 /* Pods_MVVMExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +67,7 @@
 		406593792369235700455A9E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4065937F236924CD00455A9E /* TeamManager.swift */,
+				4065937F236924CD00455A9E /* APITeamManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -95,23 +101,90 @@
 		40B56544236919C100334520 /* MVVMExample */ = {
 			isa = PBXGroup;
 			children = (
-				40B56545236919C100334520 /* AppDelegate.swift */,
-				40B56547236919C100334520 /* SceneDelegate.swift */,
-				40B56549236919C100334520 /* ViewController.swift */,
-				40F4434223691F2F006F26F3 /* Infrastructure */,
-				406593792369235700455A9E /* Services */,
-				4065937C2369237400455A9E /* Model */,
-				40B5654B236919C100334520 /* Main.storyboard */,
-				40B5654E236919C500334520 /* Assets.xcassets */,
-				40B56550236919C500334520 /* LaunchScreen.storyboard */,
+				40C6CD56236A669100321D78 /* Resources */,
+				40C6CD55236A668500321D78 /* Sources */,
 				40B56553236919C500334520 /* Info.plist */,
 			);
 			path = MVVMExample;
 			sourceTree = "<group>";
 		};
+		40C6CD48236A627D00321D78 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD49236A629900321D78 /* TeamViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40C6CD4E236A63EC00321D78 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD4F236A63FE00321D78 /* TeamManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		40C6CD51236A658D00321D78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD52236A65A500321D78 /* TeamsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		40C6CD55236A668500321D78 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD51236A658D00321D78 /* ViewController */,
+				40C6CD57236A66AC00321D78 /* View */,
+				4065937C2369237400455A9E /* Model */,
+				40C6CD48236A627D00321D78 /* ViewModel */,
+				40C6CD4E236A63EC00321D78 /* Manager */,
+				406593792369235700455A9E /* Services */,
+				40F4434223691F2F006F26F3 /* Infrastructure */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		40C6CD56236A669100321D78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD59236A66D500321D78 /* Storyboard */,
+				40B5654E236919C500334520 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40C6CD57236A66AC00321D78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD58236A66BF00321D78 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40C6CD58236A66BF00321D78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				40C6CD5D236A672600321D78 /* TeamTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		40C6CD59236A66D500321D78 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				40B5654B236919C100334520 /* Main.storyboard */,
+				40B56550236919C500334520 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		40F4434223691F2F006F26F3 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				40B56545236919C100334520 /* AppDelegate.swift */,
+				40B56547236919C100334520 /* SceneDelegate.swift */,
 				40F4434023691EEF006F26F3 /* API.swift */,
 				406593772369231D00455A9E /* Constants.swift */,
 			);
@@ -243,12 +316,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4065937E2369239000455A9E /* Team.swift in Sources */,
+				40C6CD4A236A629900321D78 /* TeamViewModel.swift in Sources */,
 				406593782369231D00455A9E /* Constants.swift in Sources */,
-				40B5654A236919C100334520 /* ViewController.swift in Sources */,
+				40C6CD53236A65A500321D78 /* TeamsViewController.swift in Sources */,
 				40B56546236919C100334520 /* AppDelegate.swift in Sources */,
 				40F4434123691EEF006F26F3 /* API.swift in Sources */,
-				40659380236924CD00455A9E /* TeamManager.swift in Sources */,
+				40C6CD5E236A672600321D78 /* TeamTableViewCell.swift in Sources */,
+				40659380236924CD00455A9E /* APITeamManager.swift in Sources */,
 				40B56548236919C100334520 /* SceneDelegate.swift in Sources */,
+				40C6CD50236A63FE00321D78 /* TeamManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

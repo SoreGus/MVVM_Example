@@ -7,10 +7,10 @@
 //
 
 class  Team: Codable {
-    var strTeam: String?
-    var strTeamBadge: String?
-    var strWebsite: String?
-    var strCountry: String?
+    private var strTeam: String?
+    private var strTeamBadge: String?
+    private var strWebsite: String?
+    private var strCountry: String?
     
     var name: String {
         if let strTeam = strTeam {

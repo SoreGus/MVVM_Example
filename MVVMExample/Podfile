@@ -9,5 +9,6 @@ target 'MVVMExample' do
 
   pod 'Bond', '~> 7.6'
   pod 'Reachability', '~> 3.2'
+  pod 'Kingfisher', '~> 5.9'
 
 end
