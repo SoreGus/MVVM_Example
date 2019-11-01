@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SHX-3E-cDr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamTableViewCell" rowHeight="92" id="Slb-vn-w8P" customClass="TeamTableViewCell" customModule="MVVMExample" customModuleProvider="target">
@@ -55,17 +55,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" placeholder="nome do time" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-8c-sb6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bQj-CW-fl5"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="SHX-3E-cDr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5W0-CC-BUz"/>
+                            <constraint firstItem="Wf0-8c-sb6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2lD-Bc-3qn"/>
+                            <constraint firstItem="Wf0-8c-sb6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3gy-U0-GN4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SHX-3E-cDr" secondAttribute="bottom" id="6FI-8M-AeS"/>
+                            <constraint firstItem="Wf0-8c-sb6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ViJ-dO-vvG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SHX-3E-cDr" secondAttribute="trailing" id="lP6-aA-1EE"/>
                             <constraint firstItem="SHX-3E-cDr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ov9-41-1wm"/>
+                            <constraint firstItem="SHX-3E-cDr" firstAttribute="top" secondItem="Wf0-8c-sb6" secondAttribute="bottom" id="pzY-b8-vbb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="Wf0-8c-sb6" id="V9f-zC-nbb"/>
                         <outlet property="tableView" destination="SHX-3E-cDr" id="aoK-5w-Rwt"/>
                     </connections>
                 </viewController>

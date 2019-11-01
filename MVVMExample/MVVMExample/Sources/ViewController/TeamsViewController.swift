@@ -19,6 +19,8 @@ class TeamsViewController: UIViewController {
     // MARK: - Outlets
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchBar: UISearchBar!
+    
     
     // MARK: - Overrides
     
@@ -26,7 +28,6 @@ class TeamsViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         bindViewModel()
-        viewModel.search(name: "Sao")
     }
     
     // MARK: Private Methods
@@ -46,6 +47,7 @@ class TeamsViewController: UIViewController {
         viewModel.teams.bind(to: self) { strongSelf, _ in
             strongSelf.tableView.reloadData()
         }
+        searchBar.reactive.text.bind(to: viewModel.serachString)
     }
     
     fileprivate func teamAt(indexPath: IndexPath) -> Team? {

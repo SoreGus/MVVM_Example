@@ -15,6 +15,7 @@ class TeamViewModel {
     let teams: Observable<[Team]> = Observable<[Team]>([])
     let error: Observable<TeamManagerError?> = Observable<TeamManagerError?>(nil)
     let refreshing: Observable<Bool> = Observable<Bool>(false)
+    let serachString: Observable<String?> = Observable<String?>("")
     
     fileprivate let manager: TeamManager
     
@@ -22,7 +23,10 @@ class TeamViewModel {
     
     init(manager: TeamManager) {
         self.manager = manager
+        observeSearchString()
     }
+    
+    // MARK: - Public Methods
     
     func search(name: String) {
         refreshing.value = false
@@ -31,6 +35,18 @@ class TeamViewModel {
             self?.error.value = error
             self?.refreshing.value = false
         }
+    }
+    
+    // MARK: - Private Methods
+    
+    fileprivate func observeSearchString() {
+        _ = serachString
+            .throttle(for: 0.5)
+            .observeNext(with: { (text) in
+            if let text = text {
+                self.search(name: text)
+            }
+        })
     }
     
 }
